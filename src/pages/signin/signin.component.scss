@@ -1,0 +1,501 @@
+body{
+  font-family: 'Jacques Francois', serif;
+}
+#sign{
+  background-image: url("../../assets/image/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 100vh;
+}
+
+a:hover{
+  text-decoration: none;
+}
+#logo img{
+  margin-top: 10px;
+  width: 20%;
+}
+#logo .container{
+  max-width: 1300px;
+}
+#signIn{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+#signIn .sign-card{
+  box-shadow: 1px 0px 26px 10px rgba(177, 175, 175, 0.164);
+  padding: 40px 30px 25px 30px;
+  width:42%;
+  border-radius: 15px;
+}
+#signIn .container{
+  display: flex;
+  justify-content: center;
+
+}
+#signIn h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Jacques Francois', serif;
+}
+#signIn .sign-card .btn{
+  background: linear-gradient(90.85deg, #135EDB 0.13%, rgba(24, 106, 211, 0.86) 23.74%, rgba(65, 252, 61, 0.85) 98.67%);
+  border-radius: 12px;
+  width:100%;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Jacques Francois', serif;
+  letter-spacing: 1.5px;
+  border: none;
+}
+#signIn input{
+  background: rgba(237, 237, 237, 0.4);
+  border: 1px solid #135EDB;
+  border-radius: 12px;
+}
+
+#signIn .next-page{
+  text-align: center;
+  font-family: 'Jacques Francois', serif;
+
+}
+
+#signIn .form-check-label{
+  font-family: 'Jacques Francois', serif;
+  color: #848282;
+
+}
+#signIn strong{
+  color: #186AD3;
+  font-family: 'Jacques Francois', serif;
+  letter-spacing: 1px;
+}
+#signIn input.form-check-input{
+  width:8px;
+  height: 7px;
+  transform: scale(3);
+  margin-top: 8px;
+
+
+}
+#signIn .form-check{
+  margin-left: 10px;
+
+}
+
+@media(min-width:1900px){
+  #logo .container{
+    max-width: 1644px;
+  }
+  #logo img{
+    margin-top: 30px;
+  }
+  #signIn{
+    margin-top: 145px;
+  }
+  #signIn .sign-card{
+    padding: 50px 30px 35px 30px;
+    width:52%;
+
+  }
+  #signIn input{
+    padding: 27px 27px 27px 17px;
+  }
+  #signIn input::placeholder{
+    font-size: 25px;
+  }
+
+  #signIn .sign-card .btn{
+    padding: 13px;
+  }
+  #signIn .next-page{
+    font-size: 16px;
+  }
+  #signIn .form-check-label{
+    font-size: 24px;
+    margin-left: 20px;
+
+  }
+  input.form-check-input{
+    width:10px;
+    height: 12px;
+    transform: scale(3)
+  }
+}
+
+@media(max-width:768px){
+  #signIn .sign-card{
+    padding: 50px 30px 35px 30px;
+    width:100%;
+    margin-top: 10%;
+
+  }
+  #logo img{
+    margin-top: 15px;
+    width: 25%;
+  }
+  #sign{
+    background-image: none;
+    /* background-size: auto;
+    background-size: 100% 736px; */
+  }
+}
+
+@media(min-width:320px) and (max-width:365px){
+  #signIn .sign-card{
+
+    margin-top: 7%;
+
+  }
+
+}
+
+/* =======Post====== */
+header{
+  height: 260px;
+  background: linear-gradient(92.02deg, rgba(22, 101, 214, 0.12) 0%, rgba(94, 239, 109, 0.08) 98.98%);
+}
+header .container{
+  max-width: 1330px;
+
+}
+header .col-md-2 img{
+  border-radius: 10000px;
+  border: 15px solid rgb(255, 255, 255);
+  width: 170px;
+  height: 170px;
+  margin-top: 15px;
+
+}
+header .col-md-2  .edit{
+  position: relative;
+  top: -55px;
+  background-color: rgb(209, 209, 207);
+  border-radius: 1000px;
+  left: 120px;
+  height: 43px;
+  width: 43px;
+  padding: 5px 10px 10px 10px;
+
+}
+
+header .col-md-2 .fa-pencil{
+  font-size: 30px;
+  color: #080764;
+}
+header .profile-popup{
+  display: none;
+
+}
+header .col-md-7,header .logout{
+  margin-top: 35px;
+}
+header .col-md-7 h1{
+  font-weight: 500;
+}
+header .col-md-7 .discript{
+  width: 52%;
+  background-color: white;
+  font-size: 14px;
+  padding: 5px 5px 1px 7px;
+  border-radius: 10px;
+}
+header .search-item .percentage{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 7px;
+  margin-left: 5px;
+
+}
+header .percentage h5{
+  font-weight: 700;
+
+}
+header .logout{
+  text-align: center;
+}
+header .logout h4{
+  position: relative;
+  left: 33px;
+  color: black;
+}
+header .logout img{
+  height: 43px;
+  margin-bottom: 10px;
+}
+
+header .progress-bar{
+  background: linear-gradient(90.01deg, #135EDB 0.75%, rgba(24, 106, 211, 0.86) 22.98%, rgba(65, 252, 61, 0.85) 100.01%);
+  border-radius: 32px;
+
+
+}
+header .progress{
+  height: 8px;
+  width: 71%;
+  margin-top: 15px;
+}
+header .search-item .form-control{
+  border: none;
+  width: 87%;
+  border-radius: 20px;
+  padding-left: 25px;
+  position: relative;
+  top: -12px;
+  box-shadow: 0px 2px 1px 1px rgba(173, 171, 171, 0.336);
+}
+header .search-item .btn{
+  position: relative;
+  right: 12%;
+  color: #848282;
+  position: relative;
+  top: -12px;
+}
+#post{
+  margin-top: 30px;
+}
+#post .col-md-1 p{
+  margin-top: 20px;
+
+}
+#post textarea{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background:none;
+  height: 110px;
+}
+#post .write-card{
+  background: rgba(237, 237, 237, 0.4);
+  border-radius: 28px;
+  height: 230px;
+  padding: 20px 15px 15px 25px;
+  margin-bottom: 33px;
+
+}
+#post .container{
+  max-width: 1220px;
+}
+#post .btn-record{
+  width: 263px;
+  height: 65px;
+  background: linear-gradient(93.67deg, rgba(24, 106, 211, 0.86) 0%, #1562D7 0.01%, rgba(24, 106, 211, 0.86) 25.52%, rgba(65, 252, 61, 0.85) 100%);
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  position: relative;
+  left: 78%;
+}
+#post .btn-attach{
+  position: relative;
+  left: 90%;
+}
+.discript .fa-pencil{
+  position: relative;
+  margin-left: 95%;
+  text-align:right;
+}
+@media(min-width:1900px){
+
+  header{
+    height: 366px;
+  }
+  header .container{
+    max-width: 1744px;
+  }
+  header .col-md-2 img{
+    width: 231px;
+    height: 231px;
+
+  }
+  header .col-md-2  .edit{
+    top: -65px;
+    left: 180px;
+    height: 50px;
+    width: 50px;
+  }
+  #post {
+    margin-top: 50px;
+  }
+  #post .container{
+    max-width: 1590px;
+    font-size: 25px;
+  }
+  #post .btn-record{
+    width: 367px;
+    height: 93px;
+    font-size: 36px;
+    left: 76%;
+    margin-bottom: 20px;
+
+  }
+  #post .write-card{
+    height: 322px;
+
+
+  }
+  header .col-md-2 .fa-pencil{
+    font-size: 34px;
+  }
+  #post .btn-attach{
+    font-size: 25px;
+    left: 88%;
+  }
+  header h1{
+    font-size: 60px;
+  }
+  header .col-md-7 .discript{
+    font-size: 20px;
+  }
+  header .col-md-7 .discript{
+    width: 55%;
+  }
+  header .col-md-7,header .logout{
+    margin-top: 55px;
+  }
+  header .logout img{
+    height: 48px;
+  }
+  header .search-item .form-control{
+    width: 85%;
+  }
+  header .search-item{
+    margin-top: 32px;
+  }
+
+}
+@media(max-width:768px){
+  header{
+    height: auto;
+  }
+  #post .btn-record{
+    left: 45%;
+    width: 170px;
+    height: 45px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  #post .btn-attach{
+
+    left: 65%;
+  }
+  header .col-md-2  .edit{
+    top:50px;
+    left: -45px;
+
+  }
+  header .logout{
+    text-align: left;
+  }
+  header .logout h4{
+    left: 3px;
+
+  }
+  header .col-md-7 .discript{
+    width: 100%;
+  }
+  header .progress{
+    margin-bottom: 25px;
+  }
+
+}
+
+
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox .form-control {
+  width: 130%;
+  font-weight: bold;
+  background-color:rgba(237, 237, 237, 0.4);
+  height: 70px;
+
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkBoxes {
+  display: none;
+  box-shadow: 0px 2px 1px 1px rgba(173, 171, 171, 0.336);
+  padding-bottom: 8px;
+  width: 130%;
+
+}
+
+#checkBoxes label {
+  display: block;
+  padding: 15px 20px 0px 20px;
+}
+#checkBoxes .check-hr{
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+#checkBoxes label span{
+  width:200px;
+}
+#checkBoxes input{
+  position: absolute;
+  left: 70%;
+  margin-top: 5px;
+
+}
+
+.connection{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.connect-btn{
+  padding: 20px 50px 20px 50px;
+  font-size: 21px;
+  border: none;
+  font-weight: 600;
+  background-color:rgba(237, 237, 237, 0.4);
+  border-radius: 10px;
+}
+
+.connection .form-group{
+  margin-left: 75px;
+
+}
+@media(min-width:1900px){
+  .connection{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .selectBox select {
+    width: 150%;
+  }
+  #checkBoxes {
+    width: 150%;
+  }
+  #checkBoxes input{
+
+    left: 67%;
+    margin-top: 11px;
+
+  }
+}
+@media(max-width:768px){
+  .connection .form-group{
+    margin-left: 0px;
+
+  }
+
+}

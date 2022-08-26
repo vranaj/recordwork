@@ -1,0 +1,651 @@
+body{
+  font-family: 'Jacques Francois', serif;
+}
+#sign{
+  background-image: url("../../../assets/image/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+#logo img{
+  margin-top: 10px;
+  width: 20%;
+}
+#logo .container{
+  max-width: 1300px;
+}
+#signIn{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+#signIn .sign-card{
+  box-shadow: 1px 0px 26px 10px rgba(177, 175, 175, 0.164);
+  padding: 40px 30px 25px 30px;
+  width:42%;
+  border-radius: 15px;
+}
+#signIn .container{
+  display: flex;
+  justify-content: center;
+
+}
+#signIn h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Jacques Francois', serif;
+}
+#signIn .sign-card .btn{
+  background: linear-gradient(90.85deg, #135EDB 0.13%, rgba(24, 106, 211, 0.86) 23.74%, rgba(65, 252, 61, 0.85) 98.67%);
+  border-radius: 12px;
+  width:100%;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Jacques Francois', serif;
+  letter-spacing: 1.5px;
+  border: none;
+}
+#signIn input{
+  background: rgba(237, 237, 237, 0.4);
+  border: 1px solid #135EDB;
+  border-radius: 12px;
+}
+
+#signIn .next-page{
+  text-align: center;
+  font-family: 'Jacques Francois', serif;
+
+}
+
+#signIn .form-check-label{
+  font-family: 'Jacques Francois', serif;
+  color: #848282;
+
+}
+#signIn strong{
+  color: #186AD3;
+  font-family: 'Jacques Francois', serif;
+  letter-spacing: 1px;
+}
+#signIn input.form-check-input{
+  width:8px;
+  height: 7px;
+  transform: scale(3);
+  margin-top: 8px;
+
+
+}
+#signIn .form-check{
+  margin-left: 10px;
+
+}
+
+@media(min-width:1900px){
+  #logo .container{
+    max-width: 1644px;
+  }
+  #logo img{
+    margin-top: 30px;
+  }
+  #signIn{
+    margin-top: 145px;
+  }
+  #signIn .sign-card{
+    padding: 50px 30px 35px 30px;
+    width:52%;
+
+  }
+  #signIn input{
+    padding: 27px 27px 27px 17px;
+  }
+  #signIn input::placeholder{
+    font-size: 25px;
+  }
+
+  #signIn .sign-card .btn{
+    padding: 13px;
+  }
+  #signIn .next-page{
+    font-size: 16px;
+  }
+  #signIn .form-check-label{
+    font-size: 24px;
+    margin-left: 20px;
+
+  }
+  input.form-check-input{
+    width:10px;
+    height: 12px;
+    transform: scale(3)
+  }
+}
+
+@media(max-width:768px){
+  #signIn .sign-card{
+    padding: 50px 30px 35px 30px;
+    width:100%;
+    margin-top: 10%;
+
+  }
+  #logo img{
+    margin-top: 15px;
+    width: 25%;
+  }
+  #sign{
+    background-image: none;
+    /* background-size: auto;
+    background-size: 100% 736px; */
+  }
+}
+
+@media(min-width:320px) and (max-width:365px){
+  #signIn .sign-card{
+
+    margin-top: 7%;
+
+  }
+
+}
+
+/* =======Post====== */
+header{
+  height: 205px;
+  background: #135EDB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px 12px 0px 0px;
+  color: white;
+
+}
+header .container{
+  max-width: 1330px;
+
+}
+header .col-md-2 img{
+  border-radius: 10000px;
+  border: 15px solid rgb(255, 255, 255);
+  width: 170px;
+  height: 170px;
+  margin-top: 15px;
+
+}
+header .col-md-2  .edit{
+  position: relative;
+  top: -55px;
+  background-color: rgb(209, 209, 207);
+  border-radius: 1000px;
+  left: 120px;
+  height: 43px;
+  width: 43px;
+  padding: 5px 10px 10px 10px;
+
+}
+
+header .col-md-2 .fa-pencil{
+  font-size: 30px;
+  color: #080764;
+}
+header .profile-popup{
+  display: none;
+  background-color: rgb(188, 225, 230) ;
+  width: 60%;
+  height: 400px;
+  position:relative;
+  left: 115px;
+  top:-95px;
+  border-radius: 10px;
+
+}
+header .profile-popup .container {
+  padding: 20px 10px 20px 45px;
+}
+header .profile-popup .fa-times{
+  margin-left: 95%;
+  font-size: 25px;
+  margin-top: 10px;
+
+}
+header .profile-popup .form-control-file{
+  width: 0px;
+  border: none;
+}
+.profile-popup .profile-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-popup .profile-img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  border: 20px solid white;
+}
+header .col-md-7,header .logout{
+  margin-top: 35px;
+}
+header .col-md-7 h1{
+  font-weight: 500;
+
+}
+header .col-md-7 .discript{
+  width: 52%;
+  color: white;
+  font-size: 14px;
+  padding: 0px 5px 0px 7px;
+  border-radius: 10px;
+}
+#header .percentage{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 7px;
+  margin-left: 5px;
+
+}
+header .percentage h5{
+  font-weight: 700;
+
+}
+header .logout{
+  text-align: center;
+}
+header .logout h4{
+  position: relative;
+  left: 33px;
+  color: rgb(255, 255, 255);
+}
+header .logout img{
+  height: 43px;
+  margin-bottom: 10px;
+}
+
+header .progress-bar{
+  background:  rgba(65, 252, 61, 0.85) ;
+  border-radius: 32px;
+
+
+}
+header .progress{
+  height: 8px;
+  width: 71%;
+  margin-top: 15px;
+}
+#search-menu .search-item .form-control{
+  border: none;
+  width: 63%;
+  border-radius: 20px;
+  padding-left: 25px;
+  position: relative;
+  margin-left: 105px;
+
+  box-shadow: 0px 2px 1px 1px rgba(173, 171, 171, 0.336);
+}
+
+#search-menu .search-item .btn{
+  position: relative;
+  right: 8%;
+  color: #848282;
+  position: relative;
+
+}
+#search-menu .search-item .form-control:hover .fa-search{
+  color: white;
+}
+#search-menu .search-item .form-control::after .fa-search{
+  color: white;
+}
+#search-menu {
+  background: linear-gradient(90.09deg, #135EDB 4.65%, rgba(65, 252, 61, 0.85) 100%, rgba(61, 239, 73, 0.861984) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 12px 12px;
+  padding: 7px;
+}
+#post{
+  margin-top: 30px;
+}
+#post .col-md-1 p{
+  margin-top: 20px;
+
+}
+#post textarea{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background:none;
+  height: 110px;
+}
+#post .write-card{
+  background: rgba(237, 237, 237, 0.4);
+  border-radius: 28px;
+  height: 230px;
+  padding: 20px 15px 15px 25px;
+  margin-bottom: 33px;
+
+}
+#post .container{
+  max-width: 1220px;
+}
+#post .btn-record{
+  width: 263px;
+  height: 65px;
+  background: linear-gradient(93.67deg, rgba(24, 106, 211, 0.86) 0%, #1562D7 0.01%, rgba(24, 106, 211, 0.86) 25.52%, rgba(65, 252, 61, 0.85) 100%);
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  position: relative;
+  left: 77%;
+}
+#post .btn2{
+  margin-top: 35px;
+  left: 73.5%;
+}
+#post .btn-attach{
+  position: relative;
+  left: 90%;
+}
+.discript .fa-pencil{
+  position: relative;
+  margin-left: 95%;
+  text-align:right;
+}
+
+@media(min-width:1900px){
+
+  header{
+    height: 366px;
+  }
+  header .container{
+    max-width: 1744px;
+  }
+  header .col-md-2 img{
+    width: 231px;
+    height: 231px;
+
+  }
+  header .col-md-2  .edit{
+    top: -65px;
+    left: 180px;
+    height: 50px;
+    width: 50px;
+  }
+  #post {
+    margin-top: 50px;
+  }
+  #post .container{
+    max-width: 1590px;
+    font-size: 25px;
+  }
+  #post .btn-record{
+    width: 367px;
+    height: 93px;
+    font-size: 36px;
+    left: 76%;
+    margin-bottom: 20px;
+
+  }
+  #post .write-card{
+    height: 322px;
+
+
+  }
+  header .col-md-2 .fa-pencil{
+    font-size: 34px;
+  }
+  #post .btn-attach{
+    font-size: 25px;
+    left: 88%;
+  }
+  header h1{
+    font-size: 60px;
+  }
+  header .col-md-7 .discript{
+    font-size: 20px;
+  }
+  header .col-md-7 .discript{
+    width: 55%;
+  }
+  header .col-md-7,header .logout{
+    margin-top: 55px;
+  }
+  header .logout img{
+    height: 48px;
+  }
+  #search-menu .search-item .form-control{
+    width: 85%;
+  }
+  #search-menu .search-item{
+    margin-top: 32px;
+  }
+
+}
+@media(max-width:768px){
+  header{
+    height: auto;
+  }
+  #post .btn-record{
+    left: 45%;
+    width: 170px;
+    height: 45px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  #post .btn-attach{
+
+    left: 65%;
+  }
+  header .col-md-2  .edit{
+    top:50px;
+    left: -45px;
+
+  }
+  header .logout{
+    text-align: left;
+  }
+  header .logout h4{
+    left: 3px;
+
+  }
+  header .col-md-7 .discript{
+    width: 100%;
+  }
+  header .progress{
+    margin-bottom: 25px;
+  }
+
+}
+
+
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox .form-control {
+  width: 130%;
+  font-weight: bold;
+  background-color:rgba(237, 237, 237, 0.4);
+  height: 70px;
+
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkBoxes {
+  display: none;
+  box-shadow: 0px 2px 1px 1px rgba(173, 171, 171, 0.336);
+  padding-bottom: 8px;
+  width: 130%;
+
+}
+
+#checkBoxes label {
+  display: block;
+  padding: 15px 20px 0px 20px;
+}
+#checkBoxes .check-hr{
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+#checkBoxes label span{
+  width:200px;
+}
+#checkBoxes input{
+  position: absolute;
+  left: 70%;
+  margin-top: 5px;
+
+}
+
+.connection{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.connect-btn{
+  padding: 20px 50px 20px 50px;
+  font-size: 21px;
+  border: none;
+  font-weight: 600;
+  background-color:rgba(237, 237, 237, 0.4);
+  border-radius: 10px;
+}
+
+.connection .form-group{
+  margin-left: 75px;
+
+}
+@media(min-width:1900px){
+  .connection{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .selectBox select {
+    width: 150%;
+  }
+  #checkBoxes {
+    width: 150%;
+  }
+  #checkBoxes input{
+
+    left: 67%;
+    margin-top: 11px;
+
+  }
+}
+@media(max-width:768px){
+  .connection .form-group{
+    margin-left: 0px;
+
+  }
+
+}
+#post .records{
+  display: none;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 1px 10px 26px 10px rgba(177, 175, 175, 0.37);
+  position:absolute;
+  top:48%;
+  width: 80.5%;
+  left:13.6%;
+  padding: 20px;
+  height: auto;
+  margin-bottom: 45px;
+}
+#post .records img{
+  width: 40px;
+  height: 40px;
+  border-radius: 500px;
+  border: 5px solid white;
+}
+#post .records .col-md-12{
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(90.17deg, #1768D4 16.9%, #49D470 99.15%) border-box;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 5px 20px;
+  display: block;
+  height: 50px;
+  font-size: 19px;
+  margin-bottom: 10px;
+
+}
+#post .records .record-list{
+  padding: 35px 55px 55px 55px;
+}
+#post .records .record-list .col-md-4{
+  color: #787878;
+}
+#post .records .record-list .col-md-5{
+  color: rgba(0, 0, 0, 0.62);
+}
+
+
+#post .record-list .btn-remove{
+  width: 123px;
+  height: 35px;
+  background: linear-gradient(93.67deg, rgba(24, 106, 211, 0.86) 0%, #1562D7 0.01%, rgba(24, 106, 211, 0.86) 25.52%, rgba(65, 252, 61, 0.85) 100%);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 2px;
+
+}
+
+#post .btn-search{
+  width: 100px;
+  background: linear-gradient(93.67deg, rgba(24, 106, 211, 0.86) 0%, #1562D7 0.01%, rgba(24, 106, 211, 0.86) 25.52%, rgba(65, 252, 61, 0.85) 100%);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  position: relative;
+  right: 100px;
+  height: 37px;
+}
+#post .records form{
+  margin-left: 50px;
+  margin-top: 15px;
+}
+#post .records form .form-control{
+  width: 520px;
+  border-radius: 20px;
+  background: rgba(175, 152, 205, 0.19);
+
+}
+#post .records form .form-control::placeholder{
+  font-size: 20px;
+}
+
+@media(min-width:1900px){
+  #post .records{
+    top:37%;
+    width: 75.5%;
+    left:15.6%;
+    padding: 40px;
+
+  }
+  #post .records .col-md-12{
+    border-radius: 60px;
+  }
+  #post .record-list .btn-remove{
+    width: 153px;
+  }
+  #post .btn2{
+    margin-top: 35px;
+    left: 71.5%;
+  }
+}

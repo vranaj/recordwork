@@ -65,7 +65,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "recordwork-client:build"
+            "browserTarget": "recordwork-client:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "recordwork-client"
+  "defaultProject": "recordwork-client",
+  "cli": {
+    "analytics": false
+  }
 }
