@@ -1,0 +1,60 @@
+<div id="sign">
+  <section id="logo">
+    <div class="container">
+      <img src="/src/assets/image/logo.png" />
+    </div>
+  </section>
+  <section id="signIn">
+    <div class="container">
+      <div class="sign-card">
+        <h1>Sign In</h1>
+        <form [formGroup]="formgroup">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="User Name"
+              id="exampleInputUserName"
+              formControlName="username"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              id="exampleInputPassword1"
+              formControlName="password"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              formControlName="requiter"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Recruiter</label
+            >
+          </div>
+          <button type="submit" class="btn" (click)="submitForm()">
+            Sign In
+          </button>
+          <div class="next-page">
+            <p>
+              <a class="forget" (click)="forgotPassword()"
+                ><U>Forgot Password</U></a
+              >
+            </p>
+            <p>
+              Don't have an Account?
+              <a [routerLink]="['', 'signup']"> <strong>Sign Up</strong></a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

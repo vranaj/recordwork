@@ -2,79 +2,78 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2">
-        <img src="../../../assets/image/user.png">
-        <button class="btn edit"><i class="fa fa-pencil" aria-hidden="true"
-                                    onclick="openForm()"></i></button>
-
-
+        <img src="/src/assets/image/user.png" />
+        <button class="btn edit">
+          <i class="fa fa-pencil" aria-hidden="true" onclick="openForm()"></i>
+        </button>
       </div>
       <div class="col-md-7">
         <h1>Shanker Mahathevan</h1>
-        <p>Tech Lead </p>
+        <p>Tech Lead</p>
         <div class="discript">
           <i class="fa fa-pencil" aria-hidden="true"></i>
-          <p>Tech Lead is a software engineer responsible for leading a team and alignment of the
-            technical direction</p>
+          <p>
+            Tech Lead is a software engineer responsible for leading a team and
+            alignment of the technical direction
+          </p>
         </div>
-
-
       </div>
       <div class="col-md-3 logout">
-        <img src="../../../assets/image/logo.png">
+        <img src="/src/assets/image/logo.png" />
         <div class="d-flex flex-row">
           <div class="progress">
-            <div class="progress-bar " role="progressbar" style="width: 49%" aria-valuenow="49"
-                 aria-valuemin="0" aria-valuemax="100"></div>
-
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 49%"
+              aria-valuenow="49"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
           </div>
           <div class="percentage">
             <h5>49%</h5>
           </div>
-
         </div>
         <a href="#">
           <h4 (click)="signout()">Log Out</h4>
         </a>
-
       </div>
-
     </div>
-
-
   </div>
   <div class="profile-popup" id="myForm">
     <i class="fa fa-times" aria-hidden="true" onclick="closeForm()"></i>
     <div class="container">
-
       <form>
         <div class="form-group">
           <label for="exampleFormControlFile1">Profile Picture:</label>
-          <input type="file" class="form-control-file" placeholder="Upload Picture">
+          <input
+            type="file"
+            class="form-control-file"
+            placeholder="Upload Picture"
+          />
         </div>
       </form>
-      <div class="profile-img"><img src="../../../assets/image/user.png"></div>
-
+      <div class="profile-img"><img src="/src/assets/image/user.png" /></div>
     </div>
-
-
-
   </div>
 </header>
 <section id="search-menu">
   <div class="container">
-    <div class=" search-item d-flex justify-contents-md-between">
-
+    <div class="search-item d-flex justify-contents-md-between">
       <div class="col-md-7">
-
         <form class="form-inline">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn " type="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn" type="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
         </form>
-
-
-
       </div>
-
     </div>
   </div>
 </section>
@@ -87,36 +86,33 @@
       </div>
       <div class="col-md-11">
         <div class="write-card">
-
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Write</label>
-              <textarea class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp"></textarea>
-
+              <textarea
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              ></textarea>
             </div>
-
 
             <button type="submit" class="btn btn-attach">Attachment</button>
           </form>
-
         </div>
       </div>
-
     </div>
-    <div class="container  connection">
+    <div class="container connection">
       <div class="row">
-
         <div>
           <p class="connect-btn">Connect to :</p>
         </div>
 
-        <div class="form-group ">
+        <div class="form-group">
           <form>
-            <div class="multipleSelection ">
+            <div class="multipleSelection">
               <div class="selectBox" onclick="showCheckboxes()">
                 <select id="inputState" class="form-control">
-                  <option id="industry">INDUSTRY </option>
+                  <option id="industry">INDUSTRY</option>
                 </select>
                 <div class="overSelect"></div>
               </div>
@@ -124,137 +120,166 @@
               <div id="checkBoxes">
                 <label for="first">
                   <span>Construction Industry</span>
-                  <input type="checkbox" id="first" onclick="industry(this.id)" />
+                  <input
+                    type="checkbox"
+                    id="first"
+                    onclick="industry(this.id)"
+                  />
                 </label>
                 <div class="check-hr"></div>
 
                 <label for="second">
                   <span>Medical Industry</span>
-                  <input type="checkbox" id="second" onclick="industry(this.id)" />
+                  <input
+                    type="checkbox"
+                    id="second"
+                    onclick="industry(this.id)"
+                  />
                 </label>
                 <div class="check-hr"></div>
                 <label for="third">
                   <span>IT Industry </span>
-                  <input type="checkbox" id="third" onclick="industry(this.id)" />
+                  <input
+                    type="checkbox"
+                    id="third"
+                    onclick="industry(this.id)"
+                  />
                 </label>
-
               </div>
             </div>
           </form>
-
-
         </div>
-
-
       </div>
     </div>
-    <button class="btn btn-record"  onclick="openRecord()" id="record">Record</button>
+    <button class="btn btn-record" onclick="openRecord()" id="record">
+      Record
+    </button>
     <div class="records container" id="record-popup">
       <h2>Invite for attestation</h2>
       <form class="form-inline">
-        <input class="form-control" type="search" placeholder="Search / Email" aria-label="Search">
-        <button class=" btn-search" type="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search / Email"
+          aria-label="Search"
+        />
+        <button class="btn-search" type="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
       </form>
       <div class="record-list">
         <div class="row">
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
           <div class="col-md-12 col-lg-12">
             <div class="row">
-              <div class="col-md-1"><img src="../../../assets/image/user.png"></div>
+              <div class="col-md-1">
+                <img src="/src/assets/image/user.png" />
+              </div>
               <div class="col-md-4 pt-2">First Name-Last Name</div>
               <div class="col-md-5 pt-2">Profession</div>
-              <div class="col-md-2 "><button class="btn btn-remove">Remove</button></div>
-
+              <div class="col-md-2">
+                <button class="btn btn-remove">Remove</button>
+              </div>
             </div>
-
           </div>
-
-
         </div>
-        <button class="btn btn-record btn2"  id="record">Record</button>
+        <button class="btn btn-record btn2" id="record">Record</button>
       </div>
-
     </div>
-
   </div>
-
 </section>
