@@ -14,31 +14,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.scss'],
 })
 export class SigninComponent implements OnInit {
-  formgroup: FormGroup;
+  formGroup = new FormGroup({
+    username: new FormControl(null, [Validators.required]),
+    password: new FormControl(null, [Validators.required]),
+    requiter: new FormControl(false),
+  });
 
-  constructor(
-    private formB: FormBuilder,
-    private userSev: UserService,
-    private router: Router
-  ) {
-    this.formgroup = this.formB.group({
-      username: new FormControl(null, [Validators.required]),
-      password: new FormControl(null, [Validators.required]),
-      requiter: new FormControl(false),
-    });
-  }
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {}
 
   submitForm(): void {
-    console.log(this.formgroup);
-    if (this.formgroup.valid) {
+    console.log(this.formGroup);
+    if (this.formGroup.valid) {
       const req = {
-        username: this.formgroup.value['username'],
-        password: this.formgroup.value['password'],
+        username: this.formGroup.value['username'],
+        password: this.formGroup.value['password'],
       };
 
-      this.userSev.signin(req).subscribe((response: any) => {
+      this.userService.signin(req).subscribe((response: any) => {
         console.log(response);
         if (response.access) {
           localStorage.setItem('authtoken', response);
@@ -47,6 +41,4 @@ export class SigninComponent implements OnInit {
       });
     }
   }
-
-  forgotPassword(): void {}
 }

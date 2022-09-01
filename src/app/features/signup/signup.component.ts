@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.scss'],
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent {
   formGroup = new FormGroup({
     email: new FormControl(null, [Validators.required, Validators.email]),
     first_name: new FormControl(null, [Validators.required]),
@@ -26,9 +26,7 @@ export class SignupComponent implements OnInit {
 
   constructor(private userService: UserService, private router: Router) {}
 
-  ngOnInit(): void {}
-
-  submitForm(): void {
+  signup(): void {
     console.log(this.formGroup);
     if (this.formGroup.valid) {
       const userData = this.formGroup.value;
